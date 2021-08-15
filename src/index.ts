@@ -1,4 +1,4 @@
-import './pre-start'; // Must be the first import
+import './preStart'; // Must be the first import
 import app from './Server';
 import logger from './shared/Logger';
 

@@ -3,7 +3,7 @@ import { sanitize }  from 'sanitizer';
 import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
 
-import { UserModel } from 'src/database/user/user.model';
+import { UserModel } from '../database/user/user.model';
 
 const secret: any = process.env.JWT_SECRET;
 
