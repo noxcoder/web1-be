@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-const flag3: any = process.env.FLAG_3;
+const flag3: any = process.env.FLAG_3 || "dummy flag 3";
 
 export const flag3Controller = {
     getFlag3: (req: Request, res: Response) => {

@@ -3,7 +3,7 @@ import Mongoose = require("mongoose");
 let database: Mongoose.Connection;
 
 export const connect = () => {
-  const uri: any = process.env.DATABASE_URL;
+  const uri: any = process.env.DATABASE_URL || "mongodb://localhost:27017/abcctf-web1";
 
   if (database) {
     return;
